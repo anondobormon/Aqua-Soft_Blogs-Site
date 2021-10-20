@@ -1,0 +1,62 @@
+.login-input {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-self: center;
+  border: 2px solid #bdc3c7;
+}
+.input-user {
+  width: 280px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+.input-user div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 1px 10px;
+  border-bottom: 2px solid #bdc3c7;
+}
+.input-user div input {
+  border: none;
+  height: 40px;
+  outline: none;
+  background: none;
+  padding: 8px 10px;
+  width: 100%;
+}
+.input-user div i {
+  margin-right: 10px;
+  color: #bdc3c7;
+}
+form .submit {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+form .submit button {
+  border: none;
+  background: #00ac96;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 18px;
+  padding: 5px 20px;
+  font-weight: 600;
+  color: white;
+}
+
+@media screen and (max-width: 688px) {
+  .person-img {
+    display: none;
+  }
+}
