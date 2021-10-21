@@ -12,6 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
+const port = process.env.PORT || 5050;
+
 mongoose
   .connect(
     "mongodb+srv://learningMongodb:L7WjwKRuFQOkvnaU@cluster0.3hvbw.mongodb.net/Blogs?retryWrites=true&w=majority",
@@ -24,6 +26,6 @@ app.use("/", blogsHandler);
 app.use("/", loginHandler);
 app.use("/admin", adminHandler);
 
-app.listen(5050, () => {
-  console.log("Server Running on port 5050");
+app.listen(port, () => {
+  console.log(`Server Running on port ${port}`);
 });
